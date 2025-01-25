@@ -1,4 +1,5 @@
 from libc.math cimport sin, cos, acos, asin, log, sqrt, exp, pow
+from PyGasMix.Gases cimport GasUtil
 
 cimport libc.math
 

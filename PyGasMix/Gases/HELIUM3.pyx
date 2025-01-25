@@ -5,6 +5,8 @@ cimport libc.math
 import numpy as np
 cimport numpy as np
 import sys
+from PyGasMix.Gases cimport GasUtil
+
 from PyGasMix.Gas cimport Gas
 from cython.parallel import prange
 cimport GasUtil

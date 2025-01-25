@@ -7,9 +7,7 @@ cimport numpy as np
 import sys
 from PyGasMix.Gas cimport Gas
 from cython.parallel import prange
-import GasUtil
-
-cimport GasUtil
+from PyGasMix.Gases cimport GasUtil
 
 
 sys.path.append('../hdf5_python')
