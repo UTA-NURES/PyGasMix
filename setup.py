@@ -1,5 +1,4 @@
 from setuptools import setup, Extension
-import cython
 from Cython.Distutils import build_ext
 from setuptools import find_namespace_packages
 import os
@@ -44,7 +43,7 @@ setup(
     version='1.2.1',  # Required
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4',
     package_dir={'PyGasMix': 'PyGasMix'},
-    install_requires=['numpy','cython'],  # Optional
+    install_requires=['numpy>=1.15.1','cython>=3'],  # Optional
     include_package_data = True,
     package_data={  # Optional
         'PyGasMix': ['./PyGasMix/*.pxd','./PyGasMix/*.pxd'],
