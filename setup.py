@@ -1,8 +1,7 @@
 from setuptools import setup, Extension
-from Cython.Distutils import build_ext
-from setuptools import find_namespace_packages
-import os
 import cython
+from cython.Distutils import build_ext
+from setuptools import find_namespace_packages
 import os
 import numpy
 from io import open
