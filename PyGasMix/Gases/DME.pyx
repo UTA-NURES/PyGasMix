@@ -16,7 +16,6 @@ import os
 @cython.cdivision(True)
 @cython.boundscheck(False)
 @cython.wraparound(False)
-@cython.fast_getattr(True)
 cdef void Gas_DME(Gas*object):
     """
     This function is used to calculate the needed momentum cross sections for DME gas.

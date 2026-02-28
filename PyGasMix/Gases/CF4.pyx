@@ -14,7 +14,6 @@ import os
 @cython.cdivision(True)
 @cython.boundscheck(False)
 @cython.wraparound(False)
-@cython.fast_getattr(True)
 
 cdef void Gas_cf4(Gas* object):
     """

@@ -9,7 +9,7 @@ import sys
 from PyGasMix.Gas cimport Gas
 from cython.parallel import prange
 cimport GasUtil
-import GasUtil
+from PyGasMix.Gases import GasUtil
 
 
 sys.path.append('../hdf5_python')
@@ -19,7 +19,6 @@ import os
 @cython.cdivision(True)
 @cython.boundscheck(False)
 @cython.wraparound(False)
-@cython.fast_getattr(True)
 cdef void Gas_xenon(Gas*object):
     """
     This function is used to calculate the needed momentum cross sections for Xenon gas.

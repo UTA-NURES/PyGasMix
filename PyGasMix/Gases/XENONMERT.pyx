@@ -9,7 +9,7 @@ import sys
 from PyGasMix.Gas cimport Gas
 from cython.parallel import prange
 cimport GasUtil
-import GasUtil
+from PyGasMix.Gases import GasUtil
 
 
 sys.path.append('../hdf5_python')
@@ -19,7 +19,6 @@ import os
 @cython.cdivision(True)
 @cython.boundscheck(False)
 @cython.wraparound(False)
-@cython.fast_getattr(True)
 def MERT( epsilon, A, D, F, A1):
     a0 = 1  # 5.29e-11  # in m
     hbar = 1  # 197.32697*1e-9 # in eV m
